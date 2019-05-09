@@ -32,13 +32,15 @@
             this.TB = new System.Windows.Forms.TextBox();
             this.lblBienvenue = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.quitter = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.quitter)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 158);
+            this.label1.Location = new System.Drawing.Point(12, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 0;
@@ -47,7 +49,7 @@
             // 
             // TB
             // 
-            this.TB.Location = new System.Drawing.Point(308, 157);
+            this.TB.Location = new System.Drawing.Point(96, 55);
             this.TB.Name = "TB";
             this.TB.Size = new System.Drawing.Size(100, 20);
             this.TB.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             this.lblBienvenue.Enabled = false;
             this.lblBienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenue.Location = new System.Drawing.Point(308, 214);
+            this.lblBienvenue.Location = new System.Drawing.Point(96, 108);
             this.lblBienvenue.Name = "lblBienvenue";
             this.lblBienvenue.Size = new System.Drawing.Size(100, 45);
             this.lblBienvenue.TabIndex = 2;
@@ -69,24 +71,36 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(256, 185);
+            this.label2.Location = new System.Drawing.Point(12, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(20, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "...";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // quitter
+            // 
+            this.quitter.Image = global::Ex_Bonjour.Properties.Resources.Quitter;
+            this.quitter.Location = new System.Drawing.Point(212, -2);
+            this.quitter.Name = "quitter";
+            this.quitter.Size = new System.Drawing.Size(1428, 678);
+            this.quitter.TabIndex = 4;
+            this.quitter.TabStop = false;
+            this.quitter.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1616, 702);
+            this.Controls.Add(this.quitter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblBienvenue);
             this.Controls.Add(this.TB);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Bonjour Qui ?";
+            ((System.ComponentModel.ISupportInitialize)(this.quitter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,6 +112,7 @@
         private System.Windows.Forms.TextBox TB;
         private System.Windows.Forms.Button lblBienvenue;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox quitter;
     }
 }
 

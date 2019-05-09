@@ -36,5 +36,10 @@ namespace Ex_Bonjour
         {
            lblBienvenue.Enabled = true;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            quitter. = Leave;
+        }
     }
 }
