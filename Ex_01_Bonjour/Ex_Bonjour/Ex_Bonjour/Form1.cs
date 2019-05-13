@@ -19,7 +19,7 @@ namespace Ex_Bonjour
         
         private void button1_Click(object sender, EventArgs e)
         {
-            label2.Text = "Bonjour" + TB.Text;
+            label2.Text = "Bonjour " + TB.Text;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,7 +39,12 @@ namespace Ex_Bonjour
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            quitter. = Leave;
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

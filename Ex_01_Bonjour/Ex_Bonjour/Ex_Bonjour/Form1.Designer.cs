@@ -32,8 +32,7 @@
             this.TB = new System.Windows.Forms.TextBox();
             this.lblBienvenue = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.quitter = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.quitter)).BeginInit();
+            this.quitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -81,12 +80,12 @@
             // quitter
             // 
             this.quitter.Image = global::Ex_Bonjour.Properties.Resources.Quitter;
-            this.quitter.Location = new System.Drawing.Point(212, -2);
+            this.quitter.Location = new System.Drawing.Point(268, -26);
             this.quitter.Name = "quitter";
-            this.quitter.Size = new System.Drawing.Size(1428, 678);
-            this.quitter.TabIndex = 4;
-            this.quitter.TabStop = false;
-            this.quitter.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.quitter.Size = new System.Drawing.Size(1347, 658);
+            this.quitter.TabIndex = 5;
+            this.quitter.UseVisualStyleBackColor = true;
+            this.quitter.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -100,7 +99,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Bonjour Qui ?";
-            ((System.ComponentModel.ISupportInitialize)(this.quitter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +110,7 @@
         private System.Windows.Forms.TextBox TB;
         private System.Windows.Forms.Button lblBienvenue;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox quitter;
+        private System.Windows.Forms.Button quitter;
     }
 }
 
