@@ -27,8 +27,13 @@ namespace Ex_Déductions
 
         private void button1_Click(object sender, EventArgs e)
         {
+            float res;
             float brut = float.Parse(revenuea.Text);
             float coef = float.Parse(coeff.Text);
+            float dedje = float.Parse(dedj.Text);
+            float dedtr = float.Parse(dedt.Text);
+            float raba = float.Parse(rab.Text);
+
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)

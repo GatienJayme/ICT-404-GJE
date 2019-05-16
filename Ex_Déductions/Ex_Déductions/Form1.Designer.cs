@@ -31,8 +31,8 @@
             this.revenuea = new System.Windows.Forms.Label();
             this.coeff = new System.Windows.Forms.Label();
             this.revenui = new System.Windows.Forms.Label();
-            this.dédj = new System.Windows.Forms.CheckBox();
-            this.dédt = new System.Windows.Forms.CheckBox();
+            this.dedj = new System.Windows.Forms.CheckBox();
+            this.dedt = new System.Windows.Forms.CheckBox();
             this.rab = new System.Windows.Forms.CheckBox();
             this.cal = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -69,27 +69,28 @@
             this.revenui.Size = new System.Drawing.Size(138, 16);
             this.revenui.TabIndex = 8;
             this.revenui.Text = "Revenu imposable";
+            this.revenui.Visible = false;
             // 
-            // dédj
+            // dedj
             // 
-            this.dédj.AutoSize = true;
-            this.dédj.Location = new System.Drawing.Point(182, 285);
-            this.dédj.Name = "dédj";
-            this.dédj.Size = new System.Drawing.Size(104, 17);
-            this.dédj.TabIndex = 9;
-            this.dédj.Text = "Déduction jeune";
-            this.dédj.UseVisualStyleBackColor = true;
+            this.dedj.AutoSize = true;
+            this.dedj.Location = new System.Drawing.Point(182, 285);
+            this.dedj.Name = "dedj";
+            this.dedj.Size = new System.Drawing.Size(104, 17);
+            this.dedj.TabIndex = 9;
+            this.dedj.Text = "Déduction jeune";
+            this.dedj.UseVisualStyleBackColor = true;
             // 
-            // dédt
+            // dedt
             // 
-            this.dédt.AutoSize = true;
-            this.dédt.Location = new System.Drawing.Point(182, 313);
-            this.dédt.Name = "dédt";
-            this.dédt.Size = new System.Drawing.Size(119, 17);
-            this.dédt.TabIndex = 10;
-            this.dédt.Text = "Déduction transport";
-            this.dédt.UseVisualStyleBackColor = true;
-            this.dédt.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.dedt.AutoSize = true;
+            this.dedt.Location = new System.Drawing.Point(182, 313);
+            this.dedt.Name = "dedt";
+            this.dedt.Size = new System.Drawing.Size(119, 17);
+            this.dedt.TabIndex = 10;
+            this.dedt.Text = "Déduction transport";
+            this.dedt.UseVisualStyleBackColor = true;
+            this.dedt.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // rab
             // 
@@ -166,8 +167,8 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.cal);
             this.Controls.Add(this.rab);
-            this.Controls.Add(this.dédt);
-            this.Controls.Add(this.dédj);
+            this.Controls.Add(this.dedt);
+            this.Controls.Add(this.dedj);
             this.Controls.Add(this.revenui);
             this.Controls.Add(this.coeff);
             this.Controls.Add(this.revenuea);
@@ -183,8 +184,8 @@
         private System.Windows.Forms.Label revenuea;
         private System.Windows.Forms.Label coeff;
         private System.Windows.Forms.Label revenui;
-        private System.Windows.Forms.CheckBox dédj;
-        private System.Windows.Forms.CheckBox dédt;
+        private System.Windows.Forms.CheckBox dedj;
+        private System.Windows.Forms.CheckBox dedt;
         private System.Windows.Forms.CheckBox rab;
         private System.Windows.Forms.Button cal;
         private System.Windows.Forms.ComboBox comboBox1;
