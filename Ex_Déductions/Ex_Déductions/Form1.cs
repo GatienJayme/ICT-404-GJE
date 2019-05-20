@@ -27,18 +27,43 @@ namespace Ex_Déductions
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtBrut.Text == "" || txtCoeff.Text == "")
+                {
+                MessageBox.Show("faut remplir les deux !!!");
+                return;
+            }
             float res;
-            float brut = float.Parse(revenuea.Text);
-            float coef = float.Parse(coeff.Text);
-            float dedje = float.Parse(dedj.Text);
-            float dedtr = float.Parse(dedt.Text);
-            float raba = float.Parse(rab.Text);
+            float brut = float.Parse(txtBrut.Text);
+            float coef = float.Parse(txtCoeff.Text);
+            float dedje = float.Parse(txtDeducjeune.Text);
+            float dedtr = float.Parse(txtDeducTrsp.Text);
+            float raba = float.Parse(txtRabais.Text);
+            res = brut / coef;
+            if (rab.Checked == true)
+            {
+                res -= (raba * brut / 100);
+            }
+            if (dedj.Checked == true)
+            {
+                res -= dedje;
+            }
+            if (dedt.Checked == true)
+            {
+                res -= dedtr;
+            }
+            revenui.Visible = true;
+            revenui.Text = "Revenu imposable: fr. " + res.ToString();
+            
 
         }
-
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void revenui_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

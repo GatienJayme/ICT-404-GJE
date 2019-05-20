@@ -117,7 +117,352 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="revenuea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="revenuea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 196</value>
+  </data>
+  <data name="revenuea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="revenuea.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="revenuea.Text" xml:space="preserve">
+    <value>Revenu annuel brut</value>
+  </data>
+  <data name="&gt;&gt;revenuea.Name" xml:space="preserve">
+    <value>revenuea</value>
+  </data>
+  <data name="&gt;&gt;revenuea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;revenuea.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;revenuea.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="coeff.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="coeff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 238</value>
+  </data>
+  <data name="coeff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="coeff.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="coeff.Text" xml:space="preserve">
+    <value>Coefficient familial</value>
+  </data>
+  <data name="&gt;&gt;coeff.Name" xml:space="preserve">
+    <value>coeff</value>
+  </data>
+  <data name="&gt;&gt;coeff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;coeff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;coeff.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <metadata name="revenui.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="revenui.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="revenui.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="revenui.Location" type="System.Drawing.Point, System.Drawing">
+    <value>191, 443</value>
+  </data>
+  <data name="revenui.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 16</value>
+  </data>
+  <data name="revenui.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="revenui.Text" xml:space="preserve">
+    <value>Revenu imposable :</value>
+  </data>
+  <data name="revenui.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="revenui.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;revenui.Name" xml:space="preserve">
+    <value>revenui</value>
+  </data>
+  <data name="&gt;&gt;revenui.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;revenui.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;revenui.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="dedj.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dedj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 285</value>
+  </data>
+  <data name="dedj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="dedj.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="dedj.Text" xml:space="preserve">
+    <value>Déduction jeune</value>
+  </data>
+  <data name="&gt;&gt;dedj.Name" xml:space="preserve">
+    <value>dedj</value>
+  </data>
+  <data name="&gt;&gt;dedj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dedj.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dedj.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dedt.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dedt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 313</value>
+  </data>
+  <data name="dedt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
+  </data>
+  <data name="dedt.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="dedt.Text" xml:space="preserve">
+    <value>Déduction transport</value>
+  </data>
+  <data name="&gt;&gt;dedt.Name" xml:space="preserve">
+    <value>dedt</value>
+  </data>
+  <data name="&gt;&gt;dedt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dedt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dedt.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rab.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 339</value>
+  </data>
+  <data name="rab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="rab.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="rab.Text" xml:space="preserve">
+    <value>Rabais fidélité (%)</value>
+  </data>
+  <data name="&gt;&gt;rab.Name" xml:space="preserve">
+    <value>rab</value>
+  </data>
+  <data name="&gt;&gt;rab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rab.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 392</value>
+  </data>
+  <data name="cal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cal.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="cal.Text" xml:space="preserve">
+    <value>Calcul</value>
+  </data>
+  <data name="&gt;&gt;cal.Name" xml:space="preserve">
+    <value>cal</value>
+  </data>
+  <data name="&gt;&gt;cal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cal.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtBrut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 193</value>
+  </data>
+  <data name="txtBrut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtBrut.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txtBrut.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;txtBrut.Name" xml:space="preserve">
+    <value>txtBrut</value>
+  </data>
+  <data name="&gt;&gt;txtBrut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBrut.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtBrut.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtDeducjeune.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 284</value>
+  </data>
+  <data name="txtDeducjeune.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtDeducjeune.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="txtDeducjeune.Text" xml:space="preserve">
+    <value>900</value>
+  </data>
+  <data name="txtDeducjeune.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;txtDeducjeune.Name" xml:space="preserve">
+    <value>txtDeducjeune</value>
+  </data>
+  <data name="&gt;&gt;txtDeducjeune.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDeducjeune.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDeducjeune.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtDeducTrsp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 310</value>
+  </data>
+  <data name="txtDeducTrsp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtDeducTrsp.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="txtDeducTrsp.Text" xml:space="preserve">
+    <value>650</value>
+  </data>
+  <data name="txtDeducTrsp.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;txtDeducTrsp.Name" xml:space="preserve">
+    <value>txtDeducTrsp</value>
+  </data>
+  <data name="&gt;&gt;txtDeducTrsp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDeducTrsp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDeducTrsp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtRabais.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 339</value>
+  </data>
+  <data name="txtRabais.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtRabais.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="txtRabais.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtRabais.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;txtRabais.Name" xml:space="preserve">
+    <value>txtRabais</value>
+  </data>
+  <data name="&gt;&gt;txtRabais.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtRabais.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtRabais.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCoeff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 231</value>
+  </data>
+  <data name="txtCoeff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txtCoeff.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="txtCoeff.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;txtCoeff.Name" xml:space="preserve">
+    <value>txtCoeff</value>
+  </data>
+  <data name="&gt;&gt;txtCoeff.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCoeff.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtCoeff.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1584, 614</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Déductions</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
