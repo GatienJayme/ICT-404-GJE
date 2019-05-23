@@ -106,6 +106,7 @@
             this.butstats.TabIndex = 6;
             this.butstats.Text = "Stats";
             this.butstats.UseVisualStyleBackColor = true;
+            this.butstats.Click += new System.EventHandler(this.butstats_Click);
             // 
             // butquitter
             // 
