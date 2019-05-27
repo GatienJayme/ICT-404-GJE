@@ -33,11 +33,36 @@ namespace Ex_Déductions
                 return;
             }
             float res;
-            float brut = float.Parse(txtBrut.Text);
-            float coef = float.Parse(txtCoeff.Text);
-            float dedje = float.Parse(txtDeducjeune.Text);
-            float dedtr = float.Parse(txtDeducTrsp.Text);
-            float raba = float.Parse(txtRabais.Text);
+            float brut ;
+            float coef ;
+            float dedje ;
+            float dedtr ;
+            float raba ;
+            if (!float.TryParse(txtBrut.Text, out brut))
+            {
+                MessageBox.Show("Nop refais");
+                return;
+            }
+            if (!float.TryParse(txtCoeff.Text, out coef))
+            {
+                MessageBox.Show("Faut remplir avec des chiffres");
+                return;
+            }
+            if (!float.TryParse(txtDeducjeune.Text, out dedje))
+            {
+                MessageBox.Show("Toujours pas");
+                return;
+            }
+            if (!float.TryParse(txtDeducTrsp.Text, out dedtr))
+            {
+                MessageBox.Show("Eh bah non");
+                return;
+            }
+            if (!float.TryParse(txtRabais.Text, out raba))
+            {
+                MessageBox.Show("oooooooo presque mais non");
+                return;
+            }
             res = brut / coef;
             if (rab.Checked == true)
             {
