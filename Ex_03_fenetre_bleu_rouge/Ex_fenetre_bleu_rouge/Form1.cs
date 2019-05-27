@@ -64,5 +64,10 @@ namespace Ex_fenetre_bleu_rouge
         { 
             MessageBox.Show( dep + "  déplacement(s), "+ color + "  changement(s) de couleur.");
         }
+
+        private void Fenetre_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

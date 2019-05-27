@@ -133,6 +133,7 @@
             this.Controls.Add(this.butHG);
             this.Name = "Fenetre";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Fenetre_Load);
             this.ResumeLayout(false);
 
         }
