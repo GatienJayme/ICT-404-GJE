@@ -38,11 +38,13 @@
             this.txtcommande = new System.Windows.Forms.Label();
             this.chkanchois = new System.Windows.Forms.CheckBox();
             this.chkcapres = new System.Windows.Forms.CheckBox();
-            this.rbtjambon = new System.Windows.Forms.CheckBox();
+            this.chkjambon = new System.Windows.Forms.CheckBox();
             this.chkcrevettes = new System.Windows.Forms.CheckBox();
             this.butcommander = new System.Windows.Forms.Button();
             this.txtres = new System.Windows.Forms.Label();
             this.txtresu = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txttable
@@ -61,11 +63,12 @@
             this.txtbtable.Size = new System.Drawing.Size(35, 20);
             this.txtbtable.TabIndex = 1;
             this.txtbtable.Text = "3";
+            this.txtbtable.TextChanged += new System.EventHandler(this.txtbtable_TextChanged);
             // 
             // txtpate
             // 
             this.txtpate.AutoSize = true;
-            this.txtpate.Location = new System.Drawing.Point(85, 71);
+            this.txtpate.Location = new System.Drawing.Point(6, 0);
             this.txtpate.Name = "txtpate";
             this.txtpate.Size = new System.Drawing.Size(29, 13);
             this.txtpate.TabIndex = 2;
@@ -144,15 +147,15 @@
             this.chkcapres.Text = "Câpres";
             this.chkcapres.UseVisualStyleBackColor = true;
             // 
-            // rbtjambon
+            // chkjambon
             // 
-            this.rbtjambon.AutoSize = true;
-            this.rbtjambon.Location = new System.Drawing.Point(315, 143);
-            this.rbtjambon.Name = "rbtjambon";
-            this.rbtjambon.Size = new System.Drawing.Size(63, 17);
-            this.rbtjambon.TabIndex = 10;
-            this.rbtjambon.Text = "Jambon";
-            this.rbtjambon.UseVisualStyleBackColor = true;
+            this.chkjambon.AutoSize = true;
+            this.chkjambon.Location = new System.Drawing.Point(315, 143);
+            this.chkjambon.Name = "chkjambon";
+            this.chkjambon.Size = new System.Drawing.Size(63, 17);
+            this.chkjambon.TabIndex = 10;
+            this.chkjambon.Text = "Jambon";
+            this.chkjambon.UseVisualStyleBackColor = true;
             // 
             // chkcrevettes
             // 
@@ -166,12 +169,13 @@
             // 
             // butcommander
             // 
-            this.butcommander.Location = new System.Drawing.Point(359, 213);
+            this.butcommander.Location = new System.Drawing.Point(346, 213);
             this.butcommander.Name = "butcommander";
             this.butcommander.Size = new System.Drawing.Size(75, 23);
             this.butcommander.TabIndex = 12;
             this.butcommander.Text = "Commander";
             this.butcommander.UseVisualStyleBackColor = true;
+            this.butcommander.Click += new System.EventHandler(this.butcommander_Click);
             // 
             // txtres
             // 
@@ -184,12 +188,23 @@
             // txtresu
             // 
             this.txtresu.AutoSize = true;
+            this.txtresu.Enabled = false;
+            this.txtresu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtresu.Location = new System.Drawing.Point(134, 278);
             this.txtresu.Name = "txtresu";
-            this.txtresu.Size = new System.Drawing.Size(103, 13);
+            this.txtresu.Size = new System.Drawing.Size(0, 16);
             this.txtresu.TabIndex = 14;
-            this.txtresu.Text = "Pour la : pâte avec ,";
             this.txtresu.Click += new System.EventHandler(this.txtresu_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtpate);
+            this.groupBox1.Location = new System.Drawing.Point(58, 71);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(111, 115);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Form1
             // 
@@ -200,7 +215,7 @@
             this.Controls.Add(this.txtres);
             this.Controls.Add(this.butcommander);
             this.Controls.Add(this.chkcrevettes);
-            this.Controls.Add(this.rbtjambon);
+            this.Controls.Add(this.chkjambon);
             this.Controls.Add(this.chkcapres);
             this.Controls.Add(this.chkanchois);
             this.Controls.Add(this.txtcommande);
@@ -208,12 +223,14 @@
             this.Controls.Add(this.rbtnormale);
             this.Controls.Add(this.rbtfine);
             this.Controls.Add(this.rbtextrafine);
-            this.Controls.Add(this.txtpate);
             this.Controls.Add(this.txtbtable);
             this.Controls.Add(this.txttable);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Pizza";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,11 +248,12 @@
         private System.Windows.Forms.Label txtcommande;
         private System.Windows.Forms.CheckBox chkanchois;
         private System.Windows.Forms.CheckBox chkcapres;
-        private System.Windows.Forms.CheckBox rbtjambon;
+        private System.Windows.Forms.CheckBox chkjambon;
         private System.Windows.Forms.CheckBox chkcrevettes;
         private System.Windows.Forms.Button butcommander;
         private System.Windows.Forms.Label txtres;
         private System.Windows.Forms.Label txtresu;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

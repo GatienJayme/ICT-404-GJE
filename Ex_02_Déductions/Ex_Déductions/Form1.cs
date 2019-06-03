@@ -74,7 +74,7 @@ namespace Ex_Déductions
             }
             if (dedt.Checked == true)
             {
-                res -= dedtr; // reseultats et deductions transports
+                res -= dedtr; // resultats et deductions transports
             }
             revenui.Visible = true;
             revenui.Text = "Revenu imposable: fr. " + res.ToString();
