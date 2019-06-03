@@ -89,6 +89,7 @@
             // 
             resources.ApplyResources(this.txtBrut, "txtBrut");
             this.txtBrut.Name = "txtBrut";
+            this.txtBrut.TextChanged += new System.EventHandler(this.txtBrut_TextChanged);
             // 
             // txtDeducjeune
             // 

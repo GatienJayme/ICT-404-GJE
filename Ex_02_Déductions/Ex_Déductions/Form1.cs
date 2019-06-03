@@ -63,18 +63,18 @@ namespace Ex_Déductions
                 MessageBox.Show("oooooooo presque mais non");
                 return;
             }
-            res = brut / coef;
+            res = brut / coef; // resultats coefficient
             if (rab.Checked == true)
             {
-                res -= (raba * brut / 100);
+                res -= (raba * brut / 100); // resultats rabais
             }
             if (dedj.Checked == true)
             {
-                res -= dedje;
+                res -= dedje; // resultats et deductions jeunes
             }
             if (dedt.Checked == true)
             {
-                res -= dedtr;
+                res -= dedtr; // reseultats et deductions transports
             }
             revenui.Visible = true;
             revenui.Text = "Revenu imposable: fr. " + res.ToString();
@@ -89,6 +89,11 @@ namespace Ex_Déductions
         private void revenui_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void txtBrut_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
