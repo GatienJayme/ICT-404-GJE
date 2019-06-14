@@ -35,16 +35,21 @@
             this.rbtfine = new System.Windows.Forms.RadioButton();
             this.rbtnormale = new System.Windows.Forms.RadioButton();
             this.rbtEppaisse = new System.Windows.Forms.RadioButton();
-            this.txtcommande = new System.Windows.Forms.Label();
             this.chkanchois = new System.Windows.Forms.CheckBox();
             this.chkcapres = new System.Windows.Forms.CheckBox();
             this.chkjambon = new System.Windows.Forms.CheckBox();
             this.chkcrevettes = new System.Windows.Forms.CheckBox();
             this.butcommander = new System.Windows.Forms.Button();
-            this.txtres = new System.Windows.Forms.Label();
-            this.txtresu = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblrépertoire = new System.Windows.Forms.Label();
+            this.txtbrep = new System.Windows.Forms.TextBox();
+            this.butchanger = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbtMnormale = new System.Windows.Forms.RadioButton();
+            this.rbtMmaigre = new System.Windows.Forms.RadioButton();
+            this.rdbMBufflonne = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txttable
@@ -118,19 +123,10 @@
             this.rbtEppaisse.Text = "Epaisse";
             this.rbtEppaisse.UseVisualStyleBackColor = true;
             // 
-            // txtcommande
-            // 
-            this.txtcommande.AutoSize = true;
-            this.txtcommande.Location = new System.Drawing.Point(97, 213);
-            this.txtcommande.Name = "txtcommande";
-            this.txtcommande.Size = new System.Drawing.Size(60, 13);
-            this.txtcommande.TabIndex = 7;
-            this.txtcommande.Text = "Commande";
-            // 
             // chkanchois
             // 
             this.chkanchois.AutoSize = true;
-            this.chkanchois.Location = new System.Drawing.Point(315, 96);
+            this.chkanchois.Location = new System.Drawing.Point(358, 96);
             this.chkanchois.Name = "chkanchois";
             this.chkanchois.Size = new System.Drawing.Size(64, 17);
             this.chkanchois.TabIndex = 8;
@@ -140,7 +136,7 @@
             // chkcapres
             // 
             this.chkcapres.AutoSize = true;
-            this.chkcapres.Location = new System.Drawing.Point(315, 120);
+            this.chkcapres.Location = new System.Drawing.Point(358, 120);
             this.chkcapres.Name = "chkcapres";
             this.chkcapres.Size = new System.Drawing.Size(59, 17);
             this.chkcapres.TabIndex = 9;
@@ -150,7 +146,7 @@
             // chkjambon
             // 
             this.chkjambon.AutoSize = true;
-            this.chkjambon.Location = new System.Drawing.Point(315, 143);
+            this.chkjambon.Location = new System.Drawing.Point(358, 143);
             this.chkjambon.Name = "chkjambon";
             this.chkjambon.Size = new System.Drawing.Size(63, 17);
             this.chkjambon.TabIndex = 10;
@@ -160,7 +156,7 @@
             // chkcrevettes
             // 
             this.chkcrevettes.AutoSize = true;
-            this.chkcrevettes.Location = new System.Drawing.Point(315, 166);
+            this.chkcrevettes.Location = new System.Drawing.Point(358, 166);
             this.chkcrevettes.Name = "chkcrevettes";
             this.chkcrevettes.Size = new System.Drawing.Size(71, 17);
             this.chkcrevettes.TabIndex = 11;
@@ -169,31 +165,13 @@
             // 
             // butcommander
             // 
-            this.butcommander.Location = new System.Drawing.Point(346, 213);
+            this.butcommander.Location = new System.Drawing.Point(201, 226);
             this.butcommander.Name = "butcommander";
             this.butcommander.Size = new System.Drawing.Size(75, 23);
             this.butcommander.TabIndex = 12;
             this.butcommander.Text = "Commander";
             this.butcommander.UseVisualStyleBackColor = true;
             this.butcommander.Click += new System.EventHandler(this.butcommander_Click);
-            // 
-            // txtres
-            // 
-            this.txtres.AutoSize = true;
-            this.txtres.Location = new System.Drawing.Point(78, 259);
-            this.txtres.Name = "txtres";
-            this.txtres.Size = new System.Drawing.Size(0, 13);
-            this.txtres.TabIndex = 13;
-            // 
-            // txtresu
-            // 
-            this.txtresu.Enabled = false;
-            this.txtresu.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtresu.Location = new System.Drawing.Point(134, 278);
-            this.txtresu.Name = "txtresu";
-            this.txtresu.Size = new System.Drawing.Size(396, 151);
-            this.txtresu.TabIndex = 14;
-            this.txtresu.Click += new System.EventHandler(this.txtresu_Click);
             // 
             // groupBox1
             // 
@@ -205,19 +183,91 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // lblrépertoire
+            // 
+            this.lblrépertoire.AutoSize = true;
+            this.lblrépertoire.Location = new System.Drawing.Point(203, 300);
+            this.lblrépertoire.Name = "lblrépertoire";
+            this.lblrépertoire.Size = new System.Drawing.Size(59, 13);
+            this.lblrépertoire.TabIndex = 16;
+            this.lblrépertoire.Text = "Répertoire:";
+            // 
+            // txtbrep
+            // 
+            this.txtbrep.Location = new System.Drawing.Point(274, 300);
+            this.txtbrep.Name = "txtbrep";
+            this.txtbrep.Size = new System.Drawing.Size(195, 20);
+            this.txtbrep.TabIndex = 17;
+            this.txtbrep.Text = "C:\\Data\\CoursCSharp";
+            // 
+            // butchanger
+            // 
+            this.butchanger.Location = new System.Drawing.Point(106, 295);
+            this.butchanger.Name = "butchanger";
+            this.butchanger.Size = new System.Drawing.Size(75, 23);
+            this.butchanger.TabIndex = 18;
+            this.butchanger.Text = "Changer";
+            this.butchanger.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rdbMBufflonne);
+            this.groupBox2.Controls.Add(this.rbtMmaigre);
+            this.groupBox2.Controls.Add(this.rbtMnormale);
+            this.groupBox2.Location = new System.Drawing.Point(227, 71);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(92, 115);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Mozzarella";
+            // 
+            // rbtMnormale
+            // 
+            this.rbtMnormale.AutoSize = true;
+            this.rbtMnormale.Location = new System.Drawing.Point(6, 25);
+            this.rbtMnormale.Name = "rbtMnormale";
+            this.rbtMnormale.Size = new System.Drawing.Size(64, 17);
+            this.rbtMnormale.TabIndex = 4;
+            this.rbtMnormale.TabStop = true;
+            this.rbtMnormale.Text = "Nomrale";
+            this.rbtMnormale.UseVisualStyleBackColor = true;
+            // 
+            // rbtMmaigre
+            // 
+            this.rbtMmaigre.AutoSize = true;
+            this.rbtMmaigre.Location = new System.Drawing.Point(6, 49);
+            this.rbtMmaigre.Name = "rbtMmaigre";
+            this.rbtMmaigre.Size = new System.Drawing.Size(57, 17);
+            this.rbtMmaigre.TabIndex = 5;
+            this.rbtMmaigre.TabStop = true;
+            this.rbtMmaigre.Text = "Maigre";
+            this.rbtMmaigre.UseVisualStyleBackColor = true;
+            // 
+            // rdbMBufflonne
+            // 
+            this.rdbMBufflonne.AutoSize = true;
+            this.rdbMBufflonne.Location = new System.Drawing.Point(6, 72);
+            this.rdbMBufflonne.Name = "rdbMBufflonne";
+            this.rdbMBufflonne.Size = new System.Drawing.Size(70, 17);
+            this.rdbMBufflonne.TabIndex = 6;
+            this.rdbMBufflonne.TabStop = true;
+            this.rdbMBufflonne.Text = "Bufflonne";
+            this.rdbMBufflonne.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtresu);
-            this.Controls.Add(this.txtres);
+            this.ClientSize = new System.Drawing.Size(602, 448);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.butchanger);
+            this.Controls.Add(this.txtbrep);
+            this.Controls.Add(this.lblrépertoire);
             this.Controls.Add(this.butcommander);
             this.Controls.Add(this.chkcrevettes);
             this.Controls.Add(this.chkjambon);
             this.Controls.Add(this.chkcapres);
             this.Controls.Add(this.chkanchois);
-            this.Controls.Add(this.txtcommande);
             this.Controls.Add(this.rbtEppaisse);
             this.Controls.Add(this.rbtnormale);
             this.Controls.Add(this.rbtfine);
@@ -230,6 +280,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,15 +296,19 @@
         private System.Windows.Forms.RadioButton rbtfine;
         private System.Windows.Forms.RadioButton rbtnormale;
         private System.Windows.Forms.RadioButton rbtEppaisse;
-        private System.Windows.Forms.Label txtcommande;
         private System.Windows.Forms.CheckBox chkanchois;
         private System.Windows.Forms.CheckBox chkcapres;
         private System.Windows.Forms.CheckBox chkjambon;
         private System.Windows.Forms.CheckBox chkcrevettes;
         private System.Windows.Forms.Button butcommander;
-        private System.Windows.Forms.Label txtres;
-        private System.Windows.Forms.Label txtresu;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblrépertoire;
+        private System.Windows.Forms.TextBox txtbrep;
+        private System.Windows.Forms.Button butchanger;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rdbMBufflonne;
+        private System.Windows.Forms.RadioButton rbtMmaigre;
+        private System.Windows.Forms.RadioButton rbtMnormale;
     }
 }
 
