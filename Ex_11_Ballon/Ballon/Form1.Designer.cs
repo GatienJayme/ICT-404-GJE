@@ -60,6 +60,7 @@
             // tmrTicTac
             // 
             this.tmrTicTac.Interval = 25;
+            this.tmrTicTac.Tick += new System.EventHandler(this.tmrTicTac_Tick);
             // 
             // frmBallon
             // 

@@ -27,16 +27,19 @@ namespace Debugger__CRC_
         // Méthode qui calcule le CRC d'une donnée.
         {
             int     NbChiffres = 0; // Pour compter le nombre de chiffres dans le numéro fourni
-
+            // il faut remettre à zéro le chiffre car il l'a stocker et va nous remettre en permanence qu'il est faux alors qu'il est juste
+            CRCVal = 0;
             // Parcourir la donnée
             for (int i = 0; i < Donnée.Length; i++)
             {
                 char c = Donnée[i];
+                // ici il devrait avoir le chiffre entre 0 et 9
                 if ((c >= '0') && (c <= '9')) // C'est un chiffre
                 {
                     NbChiffres++;
                     CRCVal = CRCVal + ((int)c - (int)'0');
-                    if (CRCVal > 100) // On ne peut pas dépasser 100 parce qu'on n'a que deux chiffres pour le CRC
+                    // Le programme prend max 99 du coup c'est normal que si le CRC fait 100 il fonctionnera pas du coup il faut rajouter =
+                    if (CRCVal >= 100) // On ne peut pas dépasser 100 parce qu'on n'a que deux chiffres pour le CRC
                         CRCVal = CRCVal - 100;
                 }
             }
